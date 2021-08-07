@@ -1,11 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import './card.css'
+// para importar animate.css ver public/notas.txt
 
 function Card({title, imageSource, text, url}) {
   
   return (
-    <div className="card text-center bg-dark">
-      <img src={imageSource} alt="im" />
+    <div className="card text-center bg-dark animate__animated animate__fadeInUp">
+      <div className="overflow">
+        <img src={imageSource} alt="im" className="card-img-top" />
+      </div>
       <div className="card-body text-light">
         <h4 className="card-title">{title}</h4>
         <p className="card-text text-secondary">
@@ -32,5 +36,5 @@ export default Card
 
 /*
 Dos formas de acceder a props.
-Ver notas.txt
+Ver components/notas.txt
 */

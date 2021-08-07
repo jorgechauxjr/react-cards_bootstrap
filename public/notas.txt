@@ -1,0 +1,22 @@
+Para usa animate style de css
+
+https://animate.style/
+
+1) Una forma es instalarlo localmente
+
+$ npm install animate.css
+
+Para usarlo debo importarlo arriba en el archivo src/index.js
+  import 'animate.css/animate.min.css'
+Nota: Al instalarlo, el archivo queda ubicado den node_modules/animate.css
+
+2) Otra forma en lugar de importarlo en el archivo es colocar
+  el enlace que provee la pagina dentro del archivo html public/index.html
+  <head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+
+Todo lo anterior aplica para Bootstrap también.
