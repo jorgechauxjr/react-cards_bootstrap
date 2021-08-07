@@ -1,3 +1,6 @@
+// Notas del componente Card
+// Ejemplos de dos formas de acceder a props, abajo en los comentarios
+
 import React from 'react'
 import PropTypes from 'prop-types'
 
@@ -30,7 +33,29 @@ Card.propTypes = {
 
 export default Card
 
+
 /*
-Dos formas de acceder a props.
-Ver notas.txt
+// Dos formas de acceder a las props
+1) Recibiendo el obj props por parametro
+function Card(props) {
+// para usar y acceder al valor de las props lo hago asi props.nombredeprop
+props.text
+props.title
+props.imageSource
+}
+
+2) usando destructuring
+
+// en lugar de recibir por parametro el obj props 
+// recibo el nombre de cada prop entre llaves
+
+function Card({title, imageSource, text, url}) {
+
+  // para usar y acceder al valor NO necesito usarl a palabra props como en el ejemplo anterior
+  // Solo se pone el nopmbre entre llaves
+  {title}
+  {text}
+  {imageSource}
+}
+
 */

@@ -10,6 +10,7 @@ const cards = [
     title: "Argentina",
     image: image1,
     url: "https://en.wikipedia.org/wiki/Argentina",
+    // text: "BUENO DIAS"
   },
   {
     id: 2,
@@ -32,7 +33,7 @@ function Cards() {
         {
           cards.map(cardObj => (
             <div className="col-md-4" key={cardObj.id}>
-          <Card title={cardObj.title} imageSource={cardObj.image} url={cardObj.url}/>
+          <Card title={cardObj.title} imageSource={cardObj.image} url={cardObj.url} text={cardObj.text}/>
         </div>
           ))
         }
