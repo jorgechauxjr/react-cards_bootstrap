@@ -1,0 +1,34 @@
+.card:hover {
+  /* border: 1px solid red !important */
+  box-shadow: 5px 10px 20px 1px rgba(255, 255, 255, 0.273);
+  /* transition es para que el efecto shadow no aparezca de una sino sombra poco a poco */
+  transition: all 0.7s linear;
+}
+
+.card-body {
+  padding: 2rem 0;
+}
+
+.card-text {
+  padding: 0.3rem 1rem;
+  font-size: 1rem;
+}
+
+/* La imagen crece cuando se pasa el mouse sobre ella */
+.card-img-top:hover {
+  transform: scale(1.8);
+}
+
+/* Para que la imagen no se salga del cuadro al crecer
+  // si se quita overflow e ve la diferencia
+*/
+.overflow {
+  overflow: hidden;
+}
+
+/* Al hacer "zoom" o crecer la imagen
+no lo haga de manera abrupta o rapida sino
+suave */
+.card-img-top {
+  transition: all 0.2s ease-in;
+}
